@@ -43,8 +43,8 @@ jobs:
         cf target -o "$CF_ORG" -s "$CF_SPACE"
         cf push -p ./pal-tracker/pal-tracker.jar
       env:
-        CF_API_URL: ${{ secrets.CF_API_URL }}
-        CF_ORG: ${{ secrets.CF_ORG }}
-        CF_SPACE: ${{ secrets.CF_SPACE }}
-        CF_USERNAME: ${{ secrets.CF_USERNAME }}
-        CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+        CF_API_URL: https://pal-tracker-boring-baboon-hf.cfapps.io/
+        CF_ORG: uki-engineering
+        CF_SPACE: Ramesh P
+        CF_USERNAME: ramesh.p5@cognizant.com
+        CF_PASSWORD: Ramsan@1721ssss
