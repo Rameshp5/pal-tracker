@@ -1,5 +1,6 @@
-name: Pal Tracker Pipeline 
- on:
+name: Pal Tracker Pipeline
+
+on:
   push:
     branches: [master]
 
@@ -12,7 +13,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-        - name: Build with Gradle
+    - name: Build with Gradle
       run: ./gradlew build
     - name: Publish artifact
       uses: actions/upload-artifact@v1
@@ -46,4 +47,4 @@ jobs:
         CF_ORG: uki-engineering
         CF_SPACE: Ramesh P
         CF_USERNAME: ramesh.p5@cognizant.com
-        CF_PASSWORD: Ramsan@1721ssss
+        CF_PASSWORD: Ramsan@1721
