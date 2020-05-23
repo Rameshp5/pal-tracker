@@ -54,7 +54,6 @@ jobs:
         CF_SPACE: Ramesh P
         CF_USERNAME: ramesh.p5@cognizant.com
         CF_PASSWORD: Ramsan@1721
-     
 
   migrate-database:
     needs: deploy
